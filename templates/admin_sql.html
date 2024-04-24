@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>管理 SQL</title>
+<style>
+  body {
+    background-color: #70a1ff; /* 海洋藍色背景 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .admin-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%; /* 調整容器寬度 */
+    max-width: 600px; /* 最大寬度 */
+  }
+  h2 {
+    margin-bottom: 30px;
+    color: #2980b9; /* 海洋藍色標題 */
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  input[type="text"] {
+    padding: 8px;
+    width: 100%; /* 擴展至整個容器寬度 */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* 防止內邊距和邊框使輸入框超出容器 */
+  }
+  input[type="submit"] {
+    background-color: #2980b9; /* 海洋藍色按鈕 */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #2471a3; /* 按鈕 hover 顏色 */
+  }
+</style>
+</head>
+<body>
+<div class="admin-container">
+  <h2>管理 SQL</h2>
+  <form action="/admin-sql" method="post">
+    <input type="text" name="sql" placeholder="請輸入 SQL 指令" required>
+    <input type="submit" value="執行">
+  </form>
+</div>
+</body>
+</html>

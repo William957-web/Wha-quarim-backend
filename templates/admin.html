@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>管理頁面</title>
+<style>
+  body {
+    background-color: #70a1ff; /* 海洋藍色背景 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .admin-container {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 30px;
+    color: #2980b9; /* 海洋藍色標題 */
+  }
+  .option-link {
+    display: block;
+    color: #2980b9; /* 海洋藍色文字 */
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .option-link:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+<div class="admin-container">
+  <h2>管理頁面</h2>
+  <a href="/admin-fish" class="option-link">魚隻管理</a>
+  <a href="/admin-food" class="option-link">飼料管理</a>
+  <a href="admin-sql" class="option-link">進階管理</a>
+</div>
+</body>
+</html>

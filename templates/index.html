@@ -1,0 +1,15 @@
+<h1>API LIST</h1>
+<h2>If you found any bug on this program. plz must report it to the dev.</h2>
+<h3>/api/reg/username/:username:/password/:pwd:</h3>
+<br>Registration, for example : <strong>/api/reg/username/whale120/password/password1234</strong></br>
+<br>And it would return a random token(sha256 hashed), for example : <strong>26a989a23abf5ee3ae4106883e9f534a8042846458e34df03ab5ee063692f007</strong></br>
+<h3>/api/login/username/:username:/password/:pwd:</h3>
+<br>Login, for example : <strong>/api/login/username/whale120/password/password1234</strong></br>
+<br>And it would return a random token(sha256 hashed), for example : <strong>26a989a23abf5ee3ae4106883e9f534a8042846458e34df03ab5ee063692f007</strong></br>
+<h3>/api/userlogout/:token:</h3>
+<br>Logout with user token, and you have to login again to get a new token</br>
+<h3>/api/getUserdata/token/:token:</h3>
+<br>Getting JSON format user data, for example <strong>http://192.168.36.129/api/getUserdata/token/26a989a23abf5ee3ae4106883e9f534a8042846458e34df03ab5ee063692f007</strong></br>
+<br>Example return data : <strong>{"userdata": [[1, "meow", "61be55a8e2f6b4e172338bddf184d6dbee29c98853e0a0485ecee7f27b9af0b4", "{}", "{}", 100, 0, "{}", "{}", "26a989a23abf5ee3ae4106883e9f534a8042846458e34df03ab5ee063692f007"]]}</strong></br>
+<br>id, username, password, fishes data, foods data, money data, total play duration time, pre_fishes, acheivements, token</br>
+<br>:D</br>
