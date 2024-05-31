@@ -39,7 +39,7 @@ def admin_login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        if username=='admin' and password=='WH@7PwD1234':
+        if username=='admin' and sha256(password.encode()).hexdigest()=='0cfbb54e47d8b2bc37a13791296747649ed7b1611d5d7bc85192a4c00e2dab84':
             session['username'] = username
             return redirect('admin')
         else:
