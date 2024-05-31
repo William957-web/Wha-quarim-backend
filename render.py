@@ -5,8 +5,8 @@ import json
 import os
 
 app = Flask(__name__)
-app.secret_key = b'Whaleeethinkingthinking'
-key=b'Wha!Quar1uM_is_s3cureeeee_ssseecretttttt'
+app.secret_key = os.urandom(16)
+key=os.urandom(16)
 
 DATABASE = 'blog.db'
 
